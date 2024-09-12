@@ -79,24 +79,7 @@
 
   @media (max-width: 1024px) {
     width: 60px;
-    transform: none;
-
-    &:nth-child(odd) {
-      padding-top: 50px;
-    }
-
-    &:nth-child(even) {
-      padding-bottom: 50px;
-    }
   }
-}
-
-.tile:nth-child(odd) {
-  transform: translateY(-15px);
-}
-
-.tile:nth-child(even) {
-  transform: translateY(15px);
 }
 
 .tile img {

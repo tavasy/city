@@ -8,17 +8,14 @@ const Tile = ({
   setHoveredTile,
   scrollToTile,
 }) => {
-  const isDesktop = window.innerWidth > 1024;
   const tileVariants = (index) => ({
     hidden: {
       opacity: 0,
       scale: 0.8,
-      y: isDesktop ? (index % 2 === 0 ? -15 : 15) : 0,
     },
     visible: {
       opacity: 1,
       scale: 1,
-      y: isDesktop ? (index % 2 === 0 ? -15 : 15) : 0,
       transition: { duration: 0.5 },
     },
   });
